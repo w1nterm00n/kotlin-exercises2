@@ -38,9 +38,9 @@ fun main() {
                 if (alphabet[j] == text[i]) {
                     textDefaultCode.add(j)
                 }
-                if (text[i] == ' '){
-                    textDefaultCode.add(34)     //34 значит пробел
-                }
+            }
+            if (text[i] == ' '){
+                textDefaultCode.add(34)     //34 значит пробел
             }
         }
         
@@ -62,7 +62,7 @@ fun main() {
                 textChangedCode.add(34)
             }
         }
-    
+
         //расшифровываю в буквы
         for (i in 0..(textChangedCode.size-1)){
             if (textChangedCode[i] == 34){
@@ -86,9 +86,9 @@ fun main() {
                 if (alphabet[j] == text[i]) {
                     textDefaultCode.add(j)
                 }
-                if (text[i] == ' '){
-                    textDefaultCode.add(34)
-                }
+            }
+            if (text[i] == ' '){
+                textDefaultCode.add(34)
             }
         }
 
@@ -130,6 +130,3 @@ fun main() {
 
     println()
 }
-
-//сделать не чувствительным к регистру +
-//разобраться с отступами когда делаю шифровку
